@@ -7,14 +7,13 @@ import java.util.*;
 public class StudentManager {
 
     private List<Student> students;
-    private Map<Integer, Student> studentMap; // for quick lookup by roll
+    private Map<Integer, Student> studentMap; 
 
     public StudentManager() {
         students = new ArrayList<>();
         studentMap = new HashMap<>();
     }
 
-    // Load from file path
     public void loadFromFile(String path) {
         students = FileUtil.readStudents(path);
         studentMap.clear();
@@ -22,7 +21,6 @@ public class StudentManager {
         System.out.println("Loaded students from file (" + students.size() + " records).");
     }
 
-    // Save to file
     public void saveToFile(String path) {
         FileUtil.writeStudents(path, students);
         System.out.println("Saved " + students.size() + " students to file.");
