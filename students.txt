@@ -1,0 +1,2 @@
+201,Rishika,rishika@mail.com,B.Tech,86.9
+198,Aryan,aryan@mail.com,M.Tech,98.4
